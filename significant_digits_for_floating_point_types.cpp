@@ -7,7 +7,6 @@ int main()
     cout.setf(ios_base::fixed, ios_base::floatfield);
     cout.precision(0);
 
-    string s;
     stringstream ss;
 
     cout << "Convert \"string\" to \"float\"" << endl;
@@ -54,5 +53,4 @@ int main()
     cout << "     string: " << ss.str() << endl;
     cout << "long double: " << longDoubleNumber << endl;
     cout << "             " << ss.str().substr(0, numeric_limits<long double>::digits10) << endl;
-    cout << "             ";
 }
