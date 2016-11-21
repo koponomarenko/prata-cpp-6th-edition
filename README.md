@@ -1,2 +1,4 @@
-# prata-cpp-6th-edition-2016
-Programming exercises to "Prata S. - C++ Primer Plus, 6th Edition - 2011" book.
+# Prata S. - C++ Primer Plus, 6th Edition - 2011
+Programming exercises for the book.
+
+Based on C++98/C++03 and some features from C++11.
