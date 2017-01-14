@@ -16,8 +16,8 @@
 using namespace std;
 
 struct TaxCategory {
-    const long long moneyLimit;
-    const double taxRate;
+    const long long MoneyLimit;
+    const double TaxRate;
 };
 
 int main()
@@ -40,9 +40,9 @@ int main()
 
         for (int i = 0; i < ArrSize && income > 0; ++i)
         {
-            slice = (income > taxCategories[i].moneyLimit) ? taxCategories[i].moneyLimit : income;
+            slice = (income > taxCategories[i].MoneyLimit) ? taxCategories[i].MoneyLimit : income;
             income -= slice;
-            tax += slice * taxCategories[i].taxRate;
+            tax += slice * taxCategories[i].TaxRate;
         }
 
         cout << "tax = " << tax << endl;

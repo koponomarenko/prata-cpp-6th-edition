@@ -35,7 +35,7 @@ int main()
     (cin >> numberOfCars).get();
     Car * cars = new Car[numberOfCars];
 
-    for (int i = 0; i < numberOfCars; i++)
+    for (int i = 0; i < numberOfCars; ++i)
     {
         cout << "Car #" << i + 1 << ":" << endl;
         cout << "Please enter the make: ";
@@ -45,7 +45,7 @@ int main()
     }
 
     cout << "Here is your collection:" << endl;
-    for (int i = 0; i < numberOfCars; i++)
+    for (int i = 0; i < numberOfCars; ++i)
     {
         cout << cars[i].builtYear << " " << cars[i].make << endl;
     }

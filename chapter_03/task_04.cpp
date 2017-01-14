@@ -18,17 +18,17 @@ int main()
     long secondsTotal = 0;
     cin >> secondsTotal;
 
-    const int secInMin = 60;
-    const int minInHour = 60;
-    const int hoursInDay = 24;
+    const int SecInMin = 60;
+    const int MinInHour = 60;
+    const int HoursInDay = 24;
 
     long seconds = secondsTotal;
-    long minutes = seconds / secInMin;
-    seconds = seconds % secInMin;
-    long hours = minutes / minInHour;
-    minutes = minutes % minInHour;
-    int days = hours / hoursInDay;
-    hours = hours % hoursInDay;
+    long minutes = seconds / SecInMin;
+    seconds = seconds % SecInMin;
+    long hours = minutes / MinInHour;
+    minutes = minutes % MinInHour;
+    int days = hours / HoursInDay;
+    hours = hours % HoursInDay;
 
     cout << secondsTotal << " seconds = " << days << " days, " << hours << " hours, " << minutes << " minutes , " << seconds << " seconds" << endl;
 }

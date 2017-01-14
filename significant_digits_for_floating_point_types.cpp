@@ -12,7 +12,7 @@ int main()
     cout << "Convert \"string\" to \"float\"" << endl;
     cout << "The minimum number of significant digits for \"float\": " << numeric_limits<float>::digits10 << endl;
     // Create a number
-    for (int i = 0; i < numeric_limits<float>::digits10; i++)
+    for (int i = 0; i < numeric_limits<float>::digits10; ++i)
         ss << (i + 1) % 10;
     // Overflow this number intentionally
     ss << "100";
@@ -28,7 +28,7 @@ int main()
     cout << "Convert \"string\" to \"double\"" << endl;
     cout << "The minimum number of significant digits for \"double\": " << numeric_limits<double>::digits10 << endl;
     // Create a number
-    for (int i = 0; i < numeric_limits<double>::digits10; i++)
+    for (int i = 0; i < numeric_limits<double>::digits10; ++i)
         ss << (i + 1) % 10;
     // Overflow this number intentionally
     ss << "100";
@@ -44,7 +44,7 @@ int main()
     cout << "Convert \"string\" to \"long double\"" << endl;
     cout << "The minimum number of significant digits for \"long double\": " << numeric_limits<long double>::digits10 << endl;
     // Create a number
-    for (int i = 0; i < numeric_limits<long double>::digits10; i++)
+    for (int i = 0; i < numeric_limits<long double>::digits10; ++i)
         ss << (i + 1) % 10;
     // Overflow this number intentionally
     ss << "100";

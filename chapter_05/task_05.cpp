@@ -12,18 +12,19 @@ using namespace std;
 
 int main()
 {
-    const int months = 12;
-    const char * monthNames[months] = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
-    int soldBooks[months] = {0};
+    const int Months = 12;
+    const char * monthNames[Months] = { "January", "February", "March", "April", "May", 
+        "June", "July", "August", "September", "October", "November", "December" };
+    int soldBooks[Months] = {0};
 
-    for (int i = 0; i < months; i++)
+    for (int i = 0; i < Months; ++i)
     {
         cout << "Enter a number of books sold in " << monthNames[i] << ": ";
         cin >> soldBooks[i];
     }
 
     int totalSales = 0;
-    for (int i = 0; i < months; i++)
+    for (int i = 0; i < Months; ++i)
         totalSales += soldBooks[i];
 
     cout << "The total sales for the year: " << totalSales << endl;

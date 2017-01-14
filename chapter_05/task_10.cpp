@@ -21,9 +21,9 @@ int main()
     cout << "Enter a number of rows to display: ";
     int rows = 0;
     cin >> rows;
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < rows; ++i)
     {
-        for (int j = rows - 1; j >= 0; j--)
+        for (int j = rows - 1; j >= 0; --j)
         {
             if (j > i)
                 cout << ".";

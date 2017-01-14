@@ -13,6 +13,6 @@ int main()
     int heightInInches = 0;
     cin >> heightInInches;
 
-    const int inchesInFoot = 12;
-    cout << "it is " << heightInInches / inchesInFoot << " foot and " << heightInInches % inchesInFoot << " inches" << endl;
+    const int InchesInFoot = 12;
+    cout << "it is " << heightInInches / InchesInFoot << " foot and " << heightInInches % InchesInFoot << " inches" << endl;
 }

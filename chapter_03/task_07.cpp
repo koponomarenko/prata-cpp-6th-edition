@@ -16,8 +16,8 @@ int main()
     double litersPer100Km = 0;
     cin >> litersPer100Km;
 
-    const double milesIn100Km = 62.14;
-    const double literInGallon = 3.875;
+    const double MilesIn100Km = 62.14;
+    const double LiterInGallon = 3.875;
 
-    cout << "It is " << milesIn100Km / (litersPer100Km / literInGallon) << " miles per gallon." << endl;
+    cout << "It is " << MilesIn100Km / (litersPer100Km / LiterInGallon) << " miles per gallon." << endl;
 }

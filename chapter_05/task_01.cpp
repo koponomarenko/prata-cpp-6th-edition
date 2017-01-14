@@ -20,7 +20,7 @@ int main()
     cin >> number_2;
 
     int sum = 0;
-    for (int i = number_1; i <= number_2; i++)
+    for (int i = number_1; i <= number_2; ++i)
         sum += i;
 
     cout << "The sum of all numbers between " << number_1 << " and " << number_2 << " is " << sum << endl;

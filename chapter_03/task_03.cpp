@@ -30,9 +30,9 @@ int main()
     int seconds = 0;
     cin >> seconds;
 
-    const int secInMin = 60;
-    const int minInDegree = 60;
+    const int SecInMin = 60;
+    const int MinInDegree = 60;
 
-    double degreesTotal = (((double(seconds) / secInMin) + minutes) / minInDegree) + degrees;
+    double degreesTotal = (((double(seconds) / SecInMin) + minutes) / MinInDegree) + degrees;
     cout << degrees << " degrees, " << minutes << " minutes, " << seconds << " seconds = " << degreesTotal << " degrees" << endl;
 }

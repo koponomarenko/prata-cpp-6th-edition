@@ -26,13 +26,13 @@ int main()
     int weight = 0;
     cin >> weight;
 
-    const int inchesInFoot = 12;
-    const float poundsInKilogram = 2.2;
+    const int InchesInFoot = 12;
+    const float PoundsInKilogram = 2.2;
 
-    float heightInInches = feetPart * inchesInFoot + inchesPart;
+    float heightInInches = feetPart * InchesInFoot + inchesPart;
 
     float heightInMeters = heightInInches * 0.0254;
-    int weightInKilograms = weight / poundsInKilogram;
+    int weightInKilograms = weight / PoundsInKilogram;
 
     cout << "Your height in meters: " << heightInMeters << endl;
     cout << "Your weight in kilograms: " << weightInKilograms << endl;

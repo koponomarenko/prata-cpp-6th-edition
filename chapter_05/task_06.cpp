@@ -9,14 +9,15 @@ using namespace std;
 
 int main()
 {
-    const int months = 12;
-    const int years = 3;
-    const char * monthNames[months] = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
-    int soldBooks[years][months] = {0};
+    const int Months = 12;
+    const int Years = 3;
+    const char * monthNames[Months] = { "January", "February", "March", "April", "May", 
+        "June", "July", "August", "September", "October", "November", "December" };
+    int soldBooks[Years][Months] = {0};
 
-    for (int i = 0; i < years; i++)
+    for (int i = 0; i < Years; ++i)
     {
-        for (int j = 0; j < months; j++)
+        for (int j = 0; j < Months; ++j)
         {
             cout << "Enter a number of books sold during " << i + 1 << " year in " << monthNames[j] << ": ";
             cin >> soldBooks[i][j];
@@ -24,13 +25,13 @@ int main()
     }
 
     int totalSales = 0;
-    for (int i = 0; i < years; i++)
+    for (int i = 0; i < Years; ++i)
     {
         int salesPerYear = 0;
-        for (int j = 0; j < months; j++)
+        for (int j = 0; j < Months; ++j)
             salesPerYear += soldBooks[i][j];
         cout << "The total sales for the " << i + 1 << " year: " << salesPerYear << endl;
         totalSales += salesPerYear;
     }
-    cout << "The total sales for " << years << " years: " << totalSales << endl;
+    cout << "The total sales for " << Years << " years: " << totalSales << endl;
 }
