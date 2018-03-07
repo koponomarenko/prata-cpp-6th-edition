@@ -13,7 +13,7 @@ int main()
     const int Years = 3;
     const char * monthNames[Months] = { "January", "February", "March", "April", "May", 
         "June", "July", "August", "September", "October", "November", "December" };
-    int soldBooks[Years][Months] = {0};
+    int soldBooks[Years][Months] = {};
 
     for (int i = 0; i < Years; ++i)
     {
