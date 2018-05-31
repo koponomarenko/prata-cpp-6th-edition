@@ -1,3 +1,6 @@
+# Vim .swp
+*.swp
+
 # Qt Creator import proj files
 *.config
 *.creator

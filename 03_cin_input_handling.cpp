@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void accept_numbers_only();
+
 int main()
 {
     cout << "Enter a number: ";
@@ -31,4 +33,22 @@ int main()
     int anotherNumber = 0;
     (cin >> anotherNumber).get();
     cout << "Your another number: " << anotherNumber << endl;
+
+    accept_numbers_only();
+}
+
+void accept_numbers_only()
+{
+    cout << "Accepts only numbers." << endl;
+    cout << "Enter a number: ";
+    int number = 0;
+    // TODO: make this work, so it accepts numbers only. Come up with tests.
+    // doesn't handle input cases like: '1bla'
+    while (!(cin >> number))
+    {
+        cout << "Only numbers are allowed!" << endl;
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Enter a number: ";
+    }
 }
