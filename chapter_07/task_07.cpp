@@ -22,7 +22,7 @@ int main()
 
     double * properties_end = fill_array(properties, properties + max_properties);
     show_array(properties, properties_end);
-    if (properties < properties_end)
+    if (properties_end != properties)
     {
         cout << "Enter revaluation factor: ";
         double factor;
@@ -44,7 +44,7 @@ double * fill_array(double * begin, double * end)
     double temp;
     int i = 0;
     double * pt = begin;
-    while (pt < end)
+    while (pt != end)
     {
         cout << "Enter value #" << (i++ + 1) << ": ";
         cin >> temp;
@@ -67,7 +67,7 @@ double * fill_array(double * begin, double * end)
 void show_array(const double * begin, const double * end)
 {
     int i = 0;
-    for (const double * pt = begin; pt < end; ++pt)
+    for (const double * pt = begin; pt != end; ++pt)
     {
         cout << "Property #" << (i++ + 1) << ": $";
         cout << *pt << endl;
@@ -76,7 +76,7 @@ void show_array(const double * begin, const double * end)
 
 void revalue(double r, double * begin, double * end)
 {
-    for (double * pt = begin; pt < end; ++pt)
+    for (double * pt = begin; pt != end; ++pt)
     {
         *pt *= r;
     }
