@@ -1,6 +1,6 @@
 project('chapter_08', 'cpp', default_options : ['cpp_std=c++11'])
 executable('task_01', 'task_01.cpp')
-#executable('task_02', 'task_02.cpp')
+executable('task_02', 'task_02.cpp')
 #executable('task_03', 'task_03.cpp')
 #executable('task_04', 'task_04.cpp')
 #executable('task_05', 'task_05.cpp')
